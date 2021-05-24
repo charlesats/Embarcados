@@ -1,0 +1,181 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"22 C:\Users\charl\OneDrive\Área de Trabalho\parte_b_4.X\parte_b_4.c
+[v _setStringOnSerial setStringOnSerial `(v  1 e 1 0 ]
+"31
+[v _UART_RX_INTERRUPTION UART_RX_INTERRUPTION `II(v  1 e 1 0 ]
+"54
+[v _handleLedSelection handleLedSelection `(v  1 e 1 0 ]
+"82
+[v _main main `(v  1 e 1 0 ]
+"59 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+[s S88 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"233
+[u S97 . 1 `S88 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES97  1 e 1 @6 ]
+[s S134 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"477
+[s S143 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S148 . 1 `S134 1 . 1 0 `S143 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES148  1 e 1 @11 ]
+[s S23 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"549
+[u S32 . 1 `S23 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES32  1 e 1 @12 ]
+[s S44 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"994
+[s S53 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S57 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S60 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S63 . 1 `S44 1 . 1 0 `S53 1 . 1 0 `S57 1 . 1 0 `S60 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES63  1 e 1 @24 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1255
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+[s S112 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1392
+[u S121 . 1 `S112 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES121  1 e 1 @134 ]
+[s S166 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1454
+[u S175 . 1 `S166 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES175  1 e 1 @135 ]
+[s S225 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"1635
+[u S234 . 1 `S225 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES234  1 e 1 @140 ]
+[s S188 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2025
+[s S197 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S201 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S204 . 1 `S188 1 . 1 0 `S197 1 . 1 0 `S201 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES204  1 e 1 @152 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2881
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"18 C:\Users\charl\OneDrive\Área de Trabalho\parte_b_4.X\parte_b_4.c
+[v _input input `uc  1 e 1 0 ]
+"19
+[v _serialFlag serialFlag `uc  1 e 1 0 ]
+"82
+[v _main main `(v  1 e 1 0 ]
+{
+"137
+} 0
+"54
+[v _handleLedSelection handleLedSelection `(v  1 e 1 0 ]
+{
+"80
+} 0
+"22
+[v _setStringOnSerial setStringOnSerial `(v  1 e 1 0 ]
+{
+[v setStringOnSerial@outputString outputString `*.24uc  1 a 1 wreg ]
+"23
+[v setStringOnSerial@count count `i  1 a 2 3 ]
+"22
+[v setStringOnSerial@outputString outputString `*.24uc  1 a 1 wreg ]
+[v setStringOnSerial@outputString outputString `*.24uc  1 a 1 5 ]
+"29
+} 0
+"31
+[v _UART_RX_INTERRUPTION UART_RX_INTERRUPTION `II(v  1 e 1 0 ]
+{
+"52
+} 0
